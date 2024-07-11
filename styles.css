@@ -1,0 +1,75 @@
+/* Base styles */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        max-width: 500px; /* Limit the width of the entire body */
+        margin: 0 auto;
+        min-height: 100vh;  /* Center the body horizontally */
+    }
+
+
+#nav-titles {
+    background-color: #f8f8f8;
+    padding: 10px 0; /* Reduced padding */
+}
+
+.sub-menu-5 {
+    background-color: white;
+    padding: 15px; /* Reduced padding */
+    border-radius: 5px; /* Slightly smaller radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    width: 95%; /* Wider container */
+    max-width: 768px; /* Reduced maximum width */
+    margin: 10px auto; /* Reduced margin */
+}
+
+.sub-menu-5 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px; /* Smaller gap */
+}
+
+.sub-menu-5 ul li {
+    text-align: center;
+    width: 100%; 
+}
+
+.sub-menu-5 ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Smaller images */
+.sub-menu-5 ul li img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%; /* Reduced max-width */
+    height: auto;
+}
+
+/* Smaller font size for text */
+.sub-menu-5 ul li:nth-child(3) a {
+    font-size: 16px; /* Smaller font */
+    font-weight: 500;
+}
+
+/* Smaller button */
+.sub-menu-5 ul li button {
+    background-color: #000; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px; /* Reduced padding */
+    border-radius: 20px; /* Smaller radius */
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.sub-menu-5 ul li button:hover {
+    background-color: #333; 
+}

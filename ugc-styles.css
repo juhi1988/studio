@@ -1,0 +1,103 @@
+/* ... (Your existing header styles from explore-styles.css) ... */
+
+/* UGC Gallery Styles */
+header {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto; 
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%; 
+}
+
+header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+header button img {
+    width: 24px;
+    height: auto;
+}
+
+/* Studio text */
+header h2 {
+    margin: 0;
+    font-size: 18px;
+    margin-right: 250px;
+    color:#413f3f; 
+}
+
+.ugc-gallery {
+    max-width: 500px; /* Adjust as needed */
+    margin: 20px auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+    gap: 10px; /* Adjust gap between images as needed */
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;  
+    border-radius: 8px; /* Add rounded corners to images */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s ease; /* Add a hover effect transition */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Slightly enlarge images on hover */
+}
+
+/* Optional: Add hover overlay for more information */
+.gallery-grid img::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.gallery-grid img:hover::before {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/* Optional: Style for overlay text */
+.gallery-grid img::after {
+    content: 'View details'; /* Sample text, replace with dynamic content */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.gallery-grid img:hover::after {
+    opacity: 1;
+}
+
+/* Media Query for Smaller Screens (Optional) */
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Smaller columns on mobile */
+    }
+}

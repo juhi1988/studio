@@ -8,28 +8,18 @@ body {
     min-height: 100vh;  /* Center the body horizontally */
 }
 
-/* ... (Rest of your header, guide text, and main styles) ... */
-
-header {
-    background-color: #fff;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
-    margin: 0 auto; 
-}
-
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%; 
+    max-width: 100%;
 }
 
 /* Back button and text container */
 .back-and-text {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 /* Style the back button */
@@ -56,7 +46,7 @@ header h2 {
 /* Icons */
 .icons {
     display: flex;
-    gap: 30px;
+    gap: 5px;
 }
 
 .icons img {
@@ -106,6 +96,16 @@ header h2 {
 
 .guide-text p {
     margin: 0;
+}
+
+/* ... other styles ... */
+.menu-item, .bookmark-icon{
+    cursor: pointer;
+}
+
+/*Optional: Style for visual feedback on hover*/
+.menu-item:hover, .bookmark-icon:hover {
+    opacity: 0.8; /* Slightly reduce opacity on hover (optional) */
 }
 
 

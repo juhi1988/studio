@@ -95,7 +95,7 @@ header button img,
     text-decoration: underline; 
 }
 
-.foryou {
+.fashion {
     margin: 0; 
     padding: 15px;
     font-family: sans-serif;
@@ -103,7 +103,7 @@ header button img,
     font-weight: 600;
 }
 
-.foryou img {
+.fashion img {
     /* Adjust margin and size as needed */
     max-width: 590px; /* Make image responsive within its container */
     height: auto; ;
